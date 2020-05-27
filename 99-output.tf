@@ -25,7 +25,7 @@ output "endpoint" {
 # }
 
 output "oidc_issuer" {
-  value = join("", aws_eks_cluster.cluster.*.identity.0.oidc.0.issuer)
+  value = join("", data.aws_eks_cluster.cluster.*.identity.0.oidc.0.issuer)
 }
 
 output "oidc_issuer_arn" {
