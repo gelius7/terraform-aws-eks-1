@@ -16,9 +16,9 @@ output "endpoint" {
   value = data.aws_eks_cluster.cluster.endpoint
 }
 
-# output "certificate_authority" {
-#   value = data.aws_eks_cluster.cluster.certificate_authority.0.data
-# }
+output "certificate_authority" {
+  value = data.aws_eks_cluster.cluster.certificate_authority.0.data
+}
 
 # output "token" {
 #   value = data.aws_eks_cluster_auth.cluster.token
