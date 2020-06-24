@@ -1,7 +1,5 @@
 # terraform-aws-eks
 
-* see: <https://github.com/nalbam/docs/blob/master/201806/EKS/README.md>
-
 ## Preparation
 
 * <https://kubernetes.io/docs/tasks/tools/install-kubectl/>
