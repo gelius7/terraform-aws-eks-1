@@ -12,6 +12,11 @@ resource "aws_eks_cluster" "cluster" {
 
   enabled_cluster_log_types = var.cluster_log_types
 
+  tags = {
+    "Name"              = var.name
+    "KubernetesCluster" = var.name
+  }
+
   depends_on = [
     aws_iam_role_policy_attachment.cluster-AmazonEKSClusterPolicy,
     aws_iam_role_policy_attachment.cluster-AmazonEKSServicePolicy,
